@@ -1,0 +1,2 @@
+%  S1: E_{x,u} := \y v. y = x & forall Phi. Phi u -> Phi v   is an essence of x at u
+thf(s1, conjecture, ![X:$i, U:w]: (ess @ (^[Y:$i, V:w]: ((Y = X) & ![Phi:w>$o]: ((Phi @ U) => (Phi @ V)))) @ X @ U)).

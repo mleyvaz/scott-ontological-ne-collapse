@@ -1,0 +1,2 @@
+%  no gap (completeness of the positivity cut): ~P(phi) -> P(~phi)
+thf(a1b, axiom, ![W:w, Phi:$i>w>$o]: (~ (p @ Phi @ W) => (p @ (^[X:$i, V:w]: ~ (Phi @ X @ V)) @ W))).

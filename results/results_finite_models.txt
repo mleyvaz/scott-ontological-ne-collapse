@@ -1,0 +1,24 @@
+classical          SAT  -> model found  (W=1, D=1)
+classical          T1   -> none up to size
+classical          C    -> none up to size
+classical          T3   -> none up to size
+classical          T4   -> none up to size
+classical          MC   -> none up to size
+paracomplete       SAT  -> model found  (W=1, D=1)
+paracomplete       T1   -> none up to size
+paracomplete       C    -> none up to size
+paracomplete       T3   -> COUNTERMODEL  (W=1, D=2)
+paracomplete       T4   -> none up to size
+paracomplete       MC   -> none up to size
+paraconsistent     SAT  -> model found  (W=1, D=1)
+paraconsistent     T1   -> COUNTERMODEL  (W=1, D=1)
+paraconsistent     C    -> COUNTERMODEL  (W=1, D=1)
+paraconsistent     T3   -> none up to size
+paraconsistent     T4   -> COUNTERMODEL  (W=1, D=1)
+paraconsistent     MC   -> COUNTERMODEL  (W=2, D=1)
+full_neutrosophic  SAT  -> model found  (W=1, D=1)
+full_neutrosophic  T1   -> COUNTERMODEL  (W=1, D=1)
+full_neutrosophic  C    -> COUNTERMODEL  (W=1, D=1)
+full_neutrosophic  T3   -> COUNTERMODEL  (W=1, D=2)
+full_neutrosophic  T4   -> COUNTERMODEL  (W=1, D=1)
+full_neutrosophic  MC   -> COUNTERMODEL  (W=2, D=1)

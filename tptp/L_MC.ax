@@ -1,0 +1,1 @@
+thf(lem_mc, axiom, ![W:w, Phi:w>$o]: ((Phi @ W) => ![V:w]: (Phi @ V))).

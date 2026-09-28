@@ -1,0 +1,25 @@
+# sanity checks
+SAN1 | base=base.ax | premises:  | goal: c_TRIV.p | SZS status Theorem
+# A1 halves
+T1 | base=base.ax | premises: A1a.ax A2.ax | goal: c_T1.p | SZS status Theorem
+T3 | base=base_lambda.ax | premises: A1b.ax A4.ax | goal: c_T3.p | SZS status Theorem
+# paracomplete chain (no A1b, no A4)
+C | base=base.ax | premises: L_T1.ax A3.ax | goal: c_C.p | SZS status Theorem
+GNE | base=base.ax | premises: A5.ax | goal: c_GNE.p | SZS status Theorem
+CNE | base=base.ax | premises: L_C.ax L_GNE.ax | goal: c_CNE.p | SZS status Theorem
+# NE-collapse lemma (definitions only)
+S1 | base=base.ax | premises: none.ax | goal: c_S1.p | SZS status Theorem
+S2pre | base=base_ne_only.ax | premises:  | goal: c_S2pre.p | SZS status Theorem
+S2a | base=base.ax | premises: L_S1.ax L_S2pre.ax | goal: c_S2a.p | SZS status Theorem
+S2 | base=base.ax | premises: L_S2a.ax | goal: c_S2.p | SZS status Theorem
+NEMC | base=base.ax | premises: L_S2.ax | goal: c_NEMC.p | SZS status Theorem
+# corollaries
+MC | base=base.ax | premises: L_NEMC.ax L_CNE.ax | goal: c_MC.p | SZS status Theorem
+NECG | base=base.ax | premises: L_C.ax L_MC.ax | goal: c_T4.p | SZS status Theorem
+# strengthened results (after review)
+R1 | base=base.ax | premises: none.ax | goal: c_R1.p | SZS status Theorem
+R2 | base=base.ax | premises: A2.ax A5.ax L_NEMC.ax | goal: c_R2.p | SZS status Theorem
+R3 | base=base.ax | premises: A2.ax A5.ax NoEmpty.ax L_NEMC.ax | goal: c_MC.p | SZS status Theorem
+R4 | base=base.ax | premises: L_T1.ax A5.ax L_NEMC.ax | goal: c_MC.p | SZS status Theorem
+R5 | base=base.ax | premises: none.ax | goal: c_R5.p | SZS status Theorem
+EQV | base=base.ax | premises: none.ax | goal: c_EQV.p | SZS status Theorem

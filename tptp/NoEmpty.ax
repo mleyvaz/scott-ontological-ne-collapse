@@ -1,0 +1,2 @@
+%  weak non-triviality: the empty property is not positive (Benzmueller KR 2020 style)
+thf(noempty, axiom, ![W:w]: ~ (p @ (^[X:$i, V:w]: $false) @ W)).

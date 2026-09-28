@@ -1,0 +1,2 @@
+thf(e_decl, type, e: $i>w>$i>w>$o).
+thf(e_def, axiom, ![X:$i, U:w, Y:$i, V:w]: ((e @ X @ U @ Y @ V) <=> ((Y = X) & ![Phi:w>$o]: ((Phi @ U) => (Phi @ V))))).

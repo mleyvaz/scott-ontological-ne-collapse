@@ -1,0 +1,1 @@
+thf(a2, axiom, ![W:w, Phi:$i>w>$o, Psi:$i>w>$o]: (((p @ Phi @ W) & ![V:w, X:$i]: ((Phi @ X @ V) => (Psi @ X @ V))) => (p @ Psi @ W))).

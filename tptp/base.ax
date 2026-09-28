@@ -1,0 +1,13 @@
+%--- Explicit shallow embedding (LogiKEy style) of modal HOL S5 with constant domains.
+%--- Worlds: type w. Propositions: w>$o. Properties: $i>w>$o. S5 = universal accessibility.
+thf(w_type, type, w: $tType).
+thf(p_decl, type, p: ($i>w>$o)>w>$o).
+thf(g_decl, type, g: $i>w>$o).
+thf(ess_decl, type, ess: ($i>w>$o)>$i>w>$o).
+thf(ne_decl, type, ne: $i>w>$o).
+%  G(x) := forall phi. P(phi) -> phi(x)
+thf(g_def, axiom, ![X:$i, W:w]: ((g @ X @ W) <=> (![Phi:$i>w>$o]: ((p @ Phi @ W) => (Phi @ X @ W))))).
+%  phi ess x := phi(x) & forall psi. psi(x) -> []forall y. phi(y) -> psi(y)
+thf(ess_def, axiom, ![Phi:$i>w>$o, X:$i, W:w]: ((ess @ Phi @ X @ W) <=> ((Phi @ X @ W) & ![Psi:$i>w>$o]: ((Psi @ X @ W) => ![V:w, Y:$i]: ((Phi @ Y @ V) => (Psi @ Y @ V)))))).
+%  NE(x) := forall phi. phi ess x -> [] exists y. phi(y)
+thf(ne_def, axiom, ![X:$i, W:w]: ((ne @ X @ W) <=> ![Phi:$i>w>$o]: ((ess @ Phi @ X @ W) => ![V:w]: ?[Y:$i]: (Phi @ Y @ V)))).

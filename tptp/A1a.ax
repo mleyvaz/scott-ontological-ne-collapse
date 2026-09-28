@@ -1,0 +1,2 @@
+%  no glut (consistency of the positivity cut): P(~phi) -> ~P(phi)
+thf(a1a, axiom, ![W:w, Phi:$i>w>$o]: ((p @ (^[X:$i, V:w]: ~ (Phi @ X @ V)) @ W) => ~ (p @ Phi @ W))).

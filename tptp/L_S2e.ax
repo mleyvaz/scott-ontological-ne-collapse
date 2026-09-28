@@ -1,0 +1,1 @@
+thf(lem_s2e, axiom, ![X:$i, U:w]: ((ne @ X @ U) => ![V:w]: ?[Y:$i]: (e @ X @ U @ Y @ V))).

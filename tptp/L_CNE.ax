@@ -1,0 +1,2 @@
+%  exists u x. NE(x) at u   (from possibility of God + G -> NE)
+thf(lem_cne, axiom, ?[U:w, X:$i]: (ne @ X @ U)).

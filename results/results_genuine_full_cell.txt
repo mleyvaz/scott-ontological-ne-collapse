@@ -1,0 +1,5 @@
+full cell, goal SAT: no model with a glut and a gap up to sizes [(1, 1), (1, 2), (2, 1), (2, 2), (3, 1)]
+full cell, goal C: no model with a glut and a gap up to sizes [(1, 1), (1, 2), (2, 1), (2, 2), (3, 1)]
+full cell, goal T3: no model with a glut and a gap up to sizes [(1, 1), (1, 2), (2, 1), (2, 2), (3, 1)]
+full cell, goal T4: no model with a glut and a gap up to sizes [(1, 1), (1, 2), (2, 1), (2, 2), (3, 1)]
+full cell, goal MC: no model with a glut and a gap up to sizes [(1, 1), (1, 2), (2, 1), (2, 2), (3, 1)]

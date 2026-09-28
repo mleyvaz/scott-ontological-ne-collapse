@@ -1,0 +1,4 @@
+thf(w_type, type, w: $tType).
+thf(ess_decl, type, ess: ($i>w>$o)>$i>w>$o).
+thf(ne_decl, type, ne: $i>w>$o).
+thf(ne_def, axiom, ![X:$i, W:w]: ((ne @ X @ W) <=> ![Phi:$i>w>$o]: ((ess @ Phi @ X @ W) => ![V:w]: ?[Y:$i]: (Phi @ Y @ V)))).

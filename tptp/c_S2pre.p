@@ -1,0 +1,1 @@
+thf(s2pre, conjecture, ![X:$i, U:w]: ((ne @ X @ U) => ((ess @ (^[Y:$i, V:w]: ((Y = X) & ![Phi:w>$o]: ((Phi @ U) => (Phi @ V)))) @ X @ U) => ![V:w]: ?[Y:$i]: ((Y = X) & ![Phi:w>$o]: ((Phi @ U) => (Phi @ V)))))).
